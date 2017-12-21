@@ -1,13 +1,13 @@
-import moment from 'moment';
-import uuidv1 from 'uuid/v1';
+import moment from 'moment'
+import uuidv1 from 'uuid/v1'
 
-export const ADD_TODO = 'ADD_TODO';
-export const COMPLETE_TODO = 'COMPLETE_TODO';
-export const DELETE_TODO = 'DELETE_TODO';
-export const FILTER_TODO = 'FILTER_TODO';
+//export const ADD_TODO = 'ADD_TODO';
+//export const COMPLETE_TODO = 'COMPLETE_TODO';
+export const DELETE_TODO = 'DELETE_TODO'
+//export const FILTER_TODO = 'FILTER_TODO';
 //react-bootstrap中默认的颜色是success,info.waring等类，这里用函数返回类
-export const isNo = () => 'info';
-export const isYes = () => 'success';
+//export const isNo = () => 'info';
+//export const isYes = () => 'success';
 
 // export function addTodo(payload) {
 // 	return {
@@ -28,25 +28,11 @@ export const isYes = () => 'success';
 // 	};
 // }
 
-
-
-const deleteTodo=(id)=>({
- 
-         type: DELETE_TODO,
-         payload: {
-			 id:id,
-			 
-		 }
+const deleteTodo = id => ({
+  type: DELETE_TODO,
+  payload: {
+    id: id,
+  },
 })
 
-export default  deleteTodo;
-
-
-
-	
-         
-		
-
-
-
-
+export default deleteTodo
